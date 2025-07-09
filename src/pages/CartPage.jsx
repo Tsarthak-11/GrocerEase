@@ -2,6 +2,7 @@ import React from 'react';
 import { useCart } from '../context/CartContext.jsx';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Table, Image, Form, Button, Card, Alert, Breadcrumb } from 'react-bootstrap';
+import '../responsive.css';
 
 const CartPage = () => {
     const { cartItems, removeFromCart, updateCartQty } = useCart();

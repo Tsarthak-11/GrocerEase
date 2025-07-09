@@ -1,0 +1,80 @@
+.ad-banners-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ad-banner {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  max-width: 590px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ad-banner-content {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.ad-banner-content h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1b5e20;
+}
+
+.ad-banner-content p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.ad-banner-content p span {
+  color: #b71c1c;
+  font-weight: 700;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .ad-banners-section {
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .ad-banner {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .ad-banner-content {
+    padding: 1rem;
+  }
+  .ad-banner-content h3 {
+    font-size: 1.2rem;
+  }
+  .ad-banner-content p {
+    font-size: 0.98rem;
+  }
+} 

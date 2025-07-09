@@ -1,0 +1,114 @@
+/* Header base styles */
+header {
+  width: 100%;
+}
+
+/* Responsive logo */
+.navbar-brand img {
+  height: 3rem;
+  width: 5rem;
+  object-fit: contain;
+  border-radius: 0.1rem;
+  margin-right: 0.5rem;
+  transition: width 0.2s, height 0.2s;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.navbar-brand span {
+  background: #00e676;
+  color: #14532d;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  margin-left: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+    padding-right: 0;
+  }
+  .navbar-brand img {
+    height: 2rem;
+    width: 3.2rem;
+    margin-right: 0.3rem;
+  }
+  .navbar-brand span {
+    font-size: 0.7rem !important;
+    padding: 0.1rem 0.5rem !important;
+    margin-left: 6px !important;
+  }
+  .navbar {
+    padding: 0.3rem 0 !important;
+  }
+  .form-control {
+    font-size: 0.9rem;
+    min-width: 80px;
+    max-width: 120px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+  }
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.2em 0.5em;
+  }
+  .navbar-collapse {
+    background: linear-gradient(90deg, #14532d 0%, #43e97b 100%);
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .d-flex.me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .navbar-toggler {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  .navbar-brand img {
+    height: 1.5rem;
+    width: 2.2rem;
+  }
+  .navbar-brand span {
+    font-size: 0.6rem !important;
+    padding: 0.08rem 0.3rem !important;
+  }
+}
+
+/* Make sure search bar and button fit in mobile */
+@media (max-width: 576px) {
+  .d-flex.me-3 {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .form-control {
+    flex: 1 1 60%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .btn-link {
+    width: 32px !important;
+    height: 32px !important;
+  }
+} 

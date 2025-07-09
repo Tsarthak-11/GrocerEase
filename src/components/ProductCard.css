@@ -67,4 +67,23 @@
 .btn-primary i {
   margin-right: 0.35rem;
   font-size: 1.05em;
+}
+
+@media (max-width: 600px) {
+  .product-card-img {
+    height: 100px;
+    padding: 0.5rem;
+  }
+  .product-title {
+    font-size: 0.85rem;
+    height: 28px;
+  }
+  .product-price {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+  }
 } 

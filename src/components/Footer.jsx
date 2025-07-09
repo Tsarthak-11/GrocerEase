@@ -11,7 +11,7 @@ const Footer = () => {
         <Row className="mb-5">
           <Col md={4} sm={12} className="mb-4 mb-md-0 d-flex flex-column align-items-start">
             <div className="mb-3" style={{ display: 'flex', alignItems: 'center' }}>
-              <FaShoppingCart style={{ fontSize: 32, marginRight: 10, color: '#fff' }} />
+              <img src={process.env.PUBLIC_URL + '/grocerEase.png'} alt="GrocerEase Logo" style={{ height: '2.2rem', width: '3.5rem', objectFit: 'contain', borderRadius: '0.1rem', marginRight: 1}} />
               <span style={{ fontWeight: 700, fontSize: 24, letterSpacing: 1 }}>GrocerEase</span>
               <span style={{ background: '#00e676', color: '#14532d', borderRadius: '1rem', fontSize: '0.9rem', fontWeight: 600, padding: '0.2rem 0.8rem', marginLeft: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>100% Fresh <FaLeaf style={{ marginLeft: 4, color: '#14532d' }} /></span>
             </div>

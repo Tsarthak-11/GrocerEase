@@ -5,6 +5,7 @@ import { useCart } from '../context/CartContext.jsx';
 import { useWishlist } from '../context/WishlistContext.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { FaSearch } from 'react-icons/fa';
+import './Header.css';
 
 const Header = () => {
   const { cartItems } = useCart();
@@ -14,10 +15,10 @@ const Header = () => {
     <header style={{ background: 'linear-gradient(90deg, #14532d 0%, #43e97b 100%)', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
       <Navbar expand="lg" collapseOnSelect variant="dark" style={{ background: 'transparent', padding: '0.7rem 0' }}>
         <Container>
-          <Navbar.Brand as={Link} to='/' style={{ display: 'flex', alignItems: 'center', fontWeight: 700, fontSize: '2rem', letterSpacing: '1px', color: '#fff' }}>
-            <img src={process.env.PUBLIC_URL + '/grocerEase.png'} alt="GrocerEase Logo" style={{ marginRight: 0, height: '3rem', width: '5rem', objectFit: 'contain', borderRadius: '0.1rem' }} />
+          <Navbar.Brand as={Link} to='/' className="navbar-brand">
+            <img src={process.env.PUBLIC_URL + '/grocerEase.png'} alt="GrocerEase Logo" />
             GrocerEase
-            <span style={{ background: '#00e676', color: '#14532d', borderRadius: '1rem', fontSize: '0.9rem', fontWeight: 600, padding: '0.2rem 0.8rem', marginLeft: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>Super Value</span>
+            <span>Super Value</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

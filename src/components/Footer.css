@@ -25,4 +25,15 @@ footer .nav-link:hover {
 .social-icon-link:hover {
   color: #43e97b !important;
   transform: scale(1.18);
+}
+
+@media (max-width: 600px) {
+  footer .nav-link, .footer-link {
+    font-size: 0.9rem !important;
+    padding: 0.2rem 0.5rem !important;
+  }
+  .social-icon-link {
+    font-size: 1.1rem !important;
+    margin: 0 0.2rem !important;
+  }
 } 

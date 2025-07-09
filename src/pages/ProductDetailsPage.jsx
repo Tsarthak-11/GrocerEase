@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
 import { products } from '../data.js';
 import { useCart } from '../context/CartContext.jsx';
+import '../responsive.css';
 
 const ProductDetailsPage = () => {
     const { id } = useParams();
