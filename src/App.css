@@ -1,0 +1,37 @@
+*{margin: 0px;padding: 0px;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #14532d 0%, #43e97b 100%);
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-bottom: 2rem;
+}
+
+/* Subtle abstract pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.07;
+  z-index: 0;
+  pointer-events: none;
+}

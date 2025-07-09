@@ -1,0 +1,28 @@
+.footer-link, .footer-link:visited, .footer-link:active, .footer-link.nav-link, .footer-link.nav-link:visited {
+  color: #fff !important;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.footer-link:hover, .footer-link.nav-link:hover {
+  color: #00e676 !important;
+  text-decoration: underline;
+}
+
+footer .nav-link {
+  color: #fff !important;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+footer .nav-link:hover {
+  color: #00e676 !important;
+  text-decoration: underline;
+}
+
+.social-icon-link {
+  transition: color 0.2s, transform 0.2s;
+}
+.social-icon-link:hover {
+  color: #43e97b !important;
+  transform: scale(1.18);
+} 

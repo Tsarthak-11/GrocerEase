@@ -1,0 +1,110 @@
+.categories-scroll {
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  gap: 1.25rem;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; */
+  padding-bottom: 2.5rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.categories-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+.category-card {
+  background: #fff;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  min-width: 183px;
+  max-width: 183px;
+  height: 240px;
+  margin: 0.5rem 0;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-5px) scale(1.04);
+}
+
+.category-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  object-fit: contain;
+}
+
+.category-card-img img, .category-card-img[src] {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.category-card-body, .category-card-title {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.category-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.scroll-arrow {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.scroll-arrow:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+}
+.scroll-arrow.left {
+  left: -18px;
+}
+.scroll-arrow.right {
+  right: -18px;
+}
+
+/* .category-card-snap {
+  scroll-snap-align: start;
+} */
+
+@media (max-width: 1200px) {
+  .category-card {
+    min-width: 140px;
+    max-width: 150px;
+    height: 180px;
+  }
+  .category-card-img {
+    width: 80px;
+    height: 80px;
+  }
+} 

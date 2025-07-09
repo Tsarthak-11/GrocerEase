@@ -1,0 +1,70 @@
+.product-card {
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.product-card-img {
+    height: 200px;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.product-category {
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px; /* Ensures consistent height */
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #43e97b 0%, #14532d 100%) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(67, 233, 123, 0.12);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  padding: 0.45rem 1.1rem;
+  letter-spacing: 0.2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, #00e676 0%, #43e97b 100%) !important;
+  color: #14532d !important;
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(67, 233, 123, 0.18);
+}
+.btn-primary i {
+  margin-right: 0.35rem;
+  font-size: 1.05em;
+} 
