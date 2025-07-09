@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Row, Col, Form } from 'react-bootstrap';
 import ProductCard from '../components/ProductCard.jsx';
 import { products } from '../data.js';
 

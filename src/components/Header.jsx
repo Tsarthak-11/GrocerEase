@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext.jsx';
 import { useWishlist } from '../context/WishlistContext.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
-import { FaShoppingCart, FaSearch } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 
 const Header = () => {
   const { cartItems } = useCart();

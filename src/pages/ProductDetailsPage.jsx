@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Container, Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
+import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
 import { products } from '../data.js';
 import { useCart } from '../context/CartContext.jsx';
 

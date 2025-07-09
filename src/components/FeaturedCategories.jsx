@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './FeaturedCategories.css';
 import attaRiceDalImg from '../images/category-atta-rice-dal.jpg';

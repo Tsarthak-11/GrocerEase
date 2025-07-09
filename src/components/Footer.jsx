@@ -19,10 +19,10 @@ const Footer = () => {
               GrocerEase is your one-stop shop for fresh groceries, daily essentials, and more. Enjoy fast delivery and the best deals every day!
             </p>
             <div className="d-flex gap-2 mt-2">
-              <a href="#" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaFacebookF /></a>
-              <a href="#" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaTwitter /></a>
-              <a href="#" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaInstagram /></a>
-              <a href="#" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaYoutube /></a>
+              <button type="button" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaFacebookF /></button>
+              <button type="button" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaTwitter /></button>
+              <button type="button" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaInstagram /></button>
+              <button type="button" className="footer-link text-white fs-5" style={{ transition: 'color 0.2s' }}><FaYoutube /></button>
             </div>
           </Col>
           <Col md={2} sm={6} className="mb-4 mb-md-0">

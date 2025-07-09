@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import ProductCard from '../../components/ProductCard.jsx';
 
 // Import 8 different images (update the paths as needed)
