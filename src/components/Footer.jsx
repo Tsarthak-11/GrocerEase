@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav, Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLeaf } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLeaf } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
