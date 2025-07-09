@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button, Link, useNavigate } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 import './ProductCard.css';
 import { useWishlist } from '../context/WishlistContext.jsx';
 import { useCart } from '../context/CartContext.jsx';
